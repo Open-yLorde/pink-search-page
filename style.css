@@ -13,6 +13,27 @@
      align-items: center;
      overflow: hidden;
      position: relative;
+     min-height: calc(100vh - 90px);
+     user-select: none;
+ }
+
+ form {
+     user-select: text;
+ }
+
+ .footer-space {
+     position: fixed;
+
+     bottom: 0;
+     left: 0;
+
+     width: 100%;
+     height: 70px;
+
+     background: rgba(255, 255, 255, .15);
+     backdrop-filter: blur(10px);
+
+     pointer-events: none;
  }
 
  /* Bolinhas decorativas */
@@ -70,9 +91,14 @@
  }
 
  h1 {
-     color: #ff4fa0;
+     color: #FFC0DA;
      font-size: 42px;
      font-weight: 800;
+ }
+
+ a {
+     text-decoration: none;
+     color: #FFC0DA;
  }
 
  .subtitle {
